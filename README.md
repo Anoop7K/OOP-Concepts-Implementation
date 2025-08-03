@@ -126,19 +126,14 @@ The delivery app implementation demonstrates several core OOP concepts through a
   - `protected` member `numlogins` in `deliver` accessible by `rating`
   - `private` members remain inaccessible to derived classes
 
-### 5. Operator Overloading
-*Not implemented in current code but could be added for:*
-- Comparing delivery costs (`operator<`)
-- Combining orders (`operator+`)
-
-### 7. Polymorphism
+### 5. Polymorphism
 - **Virtual Function**: `last()` in `lastpart` base class
 - **Runtime Polymorphism**: Using base class pointer to call derived class method
 
-### 8. Friend Function
+### 6. Friend Function
 - `app_name_comments()` can access private/protected members of `rating` class
 
-### 9. Exception Handling
+### 7. Exception Handling
 - In `rating::review()`, throws exception for invalid customer ratings
 
 ---
@@ -161,5 +156,3 @@ The delivery app implementation demonstrates several core OOP concepts through a
      ```bash
      g++ delivery_app.cpp -o delivery_app
      ```
-     
-   ```
